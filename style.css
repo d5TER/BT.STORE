@@ -1,0 +1,85 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #000000, #0077cc);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+.logo {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #00ccff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+h2 {
+  color: #00caff;
+}
+
+ul {
+  list-style: square;
+  padding: 10px 25px;
+}
+
+.product-img {
+  width: 100%;
+  max-width: 700px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 2px solid #00bfff;
+}
+
+.discord-btn {
+  display: inline-block;
+  background-color: #5865F2;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.discord-btn:hover {
+  background-color: #404EED;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  font-size: 0.9em;
+}
+
+/* Scroll animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
