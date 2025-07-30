@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>BT STORE - الصفحة الرئيسية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="bt-logo.png" alt="شعار BT STORE" class="logo">
+    <h1>BT STORE</h1>
+    <nav>
+      <a href="#products">المنتجات</a>
+      <a href="#rules">القوانين</a>
+      <a href="#payment">طرق الدفع</a>
+      <a href="#discord">ديسكورد</a>
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>المنتجات</h2>
+
+    <h3>🟦 خوادم اقتصادية</h3>
+    <img src="economic-servers.jpg" alt="خوادم اقتصادية" class="product-img">
+
+    <h3>🟩 خوادم محمية</h3>
+    <img src="protected-servers.jpg" alt="خوادم محمية" class="product-img">
+  </section>
+
+  <section id="rules" class="hidden">
+    <h2>القوانين</h2>
+    <ul>
+      <li>1. احترام المشرفين.</li>
+      <li>2. عدم نشر روابط لترويج عن شيء لا يليق بالمتجر.</li>
+      <li>3. عدم وضع صورة غير لائقة في بروفايلك داخل السيرفر.</li>
+      <li>4. عدم الإساءة للسيرفر أو للمستخدمين في الشات.</li>
+      <li>5. ممنوع استخدام المنشن إلا داخل التذكرة وبعد 10 دقائق من دون رد.</li>
+      <li>6. ممنوع سرقة السكربتات من السيرفر بدون حقوق.</li>
+    </ul>
+  </section>
+
+  <section id="payment" class="hidden">
+    <h2>طرق الدفع</h2>
+    <ul>
+      <li>🔹 Apple Pay</li>
+      <li>🔹 Visa</li>
+      <li>⚠️ سيتم إضافة طرق دفع أخرى لاحقاً.</li>
+    </ul>
+  </section>
+
+  <section id="discord" class="hidden">
+    <h2>انضم إلى مجتمعنا على Discord</h2>
+    <a href="https://discord.gg/aYE6byn5" target="_blank" class="discord-btn">الانضمام إلى السيرفر</a>
+  </section>
+
+  <footer>
+    <p>© 2025 BT STORE - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- Script for scroll animation -->
+  <script>
+    const hiddenSections = document.querySelectorAll('.hidden');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    hiddenSections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
